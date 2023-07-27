@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.display{
+    width: 300px;
+    border: 1px solid black;
+    text-align: right;
+    background-color: rgba(66,76,82,255);
+    color: white;
+    padding: 10px;
+}
+
+div {
+    border: 1px solid rgba(137,157,174,255);
+    background-color: rgba(239,242,245,255);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.number_grid{
+    display: grid;
+    background-color: rgba(137,157,174,255);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    ". . . ."
+    "sette otto nove uguale"
+    "quattro cinque sei uguale"
+    "uno due tre uguale"
+    "zero punto ac uguale";
+    text-align: center;
+}
+
+#addizione{
+    background-color: rgba(210,220,227,255);
+}
+
+#sottrazione{
+    background-color: rgba(210,220,227,255);
+}
+
+#moltiplicazione{
+    background-color: rgba(210,220,227,255);
+}
+
+#divisione{
+    background-color: rgba(210,220,227,255);
+}
+
+#uguale{
+    grid-area: uguale;
+    background-color: rgba(247,112,119,255);
+}
