@@ -7,32 +7,11 @@ const order = {
   }
 };
 
-let values = Object.values(order.customer);
-
-for(let value in order.customer){
-  if (!order.customer.city){
-    console.log("City is required")
-    break;
+  if (!order?.customer?.city){
+    console.log("City is required");
   }else{
-    value = values;
-    console.log(value);
-  }
-}
-
-//altro esempio che mi era venuto in mente guardando il video dalla piattaforma
-
-// let entries = Object.entries(order.customer)
-
-// for (let entry of entries){
-//   if(order.customer.city == ""){
-//     console.log('City is required');
-//     break;
-//   }else{
-//   let [key, value] = entry ;
-//   console.log(key);
-//   console.log(value);
-//   }
-// }
+    console.log(order.customer);
+  };
 
 // ciclo if dell'esercizio
 
