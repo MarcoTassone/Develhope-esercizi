@@ -3,6 +3,7 @@
     <div id="container" style="display: flex; align-items: center"></div>
     <script>
       const div = document.querySelector("#container");
+      const body = document.querySelector("body")
 
       async function fetchList() {
         try {
@@ -17,7 +18,7 @@
           input.textContent = data.completed;
 
           div.append(title, input);
-          div.classList.add("container");
+          body.appendChild(div);
         } catch (error) {
           console.error(error);
         }
