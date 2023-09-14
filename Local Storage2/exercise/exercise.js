@@ -18,11 +18,12 @@ function saveLocalStorage(user){
 
 function getFromLocalStorage(user){
   try {
-    const parse = JSON.stringify(user)
+    const json = JSON.stringify(user);
+    const get = JSON.parse(json)
 
-    localStorage.getItem(parse);
+    localStorage.getItem(get);
 
-    console.log(parse);
+    console.log(get);
   } catch (error) {
     console.error(error);
   }
