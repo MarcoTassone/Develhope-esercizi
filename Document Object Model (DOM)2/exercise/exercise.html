@@ -17,8 +17,9 @@
       </form>
     </div>
     <script>
-      const form = document.querySelector(".form-input").value;
-      console.log(form);
+      const form = document.querySelectorAll('.form-input[type="text"]');
+
+      form.forEach((element) => console.log(element.value));
     </script>
   </body>
 </html>
